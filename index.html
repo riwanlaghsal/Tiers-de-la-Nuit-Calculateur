@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiers de la nuit - Calculateur </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h2 class="maghrebtext">Heure du Maghreb aujourd'hui</h2>
+            <input id="maghreb" type="time" required>
+            <h2 class="fajrtext">Heure du Fajr aujourd'hui</h2>
+            <input id="fajr" type="time" required>
+            <h2 class="calcultext"></h2>
+            <input id="submit" type="button" value="Calculer">
+
+        </div>
+
+        <div id="resultColor" class="result">
+            <h1 id="firstH"></h1>
+            <h2 id="result"></h2>
+            <h1 id="secondH"></h1>
+            <h2 id="result2"></h2>
+            <h1 id="thirdH"></h1>
+            <h2 id="result3"></h2>
+        </div>
+
+        <div class="footer">
+            <input id="disclaimer" type="button" value="Plus d'informations">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p class="content">D'après Abou Houreira (qu'Allah l'agrée), le Prophète (que la prière d'Allah et Son salut soient sur lui) a dit:</p>
+                    <p class="content">« Notre Seigneur descend chaque nuit vers le ciel de l'ici-bas lorsqu'il ne reste que le dernier tiers de la nuit et il dit: Qui m'invoque que je l'exauce, qui me demande que je lui donne et qui me demande pardon que je le pardonne ».</p>
+                    <p class="content2">(Rapporté par Boukhari dans son Sahih n°1145 et Mouslim dans son Sahih n°758)</p>
+                    </div>
+            </div>
+        </div>
+
+        <canvas id="cnv"></canvas>
+        <style>
+          body {margin:0;}
+          canvas{position:fixed;}
+        </style>
+
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
+
